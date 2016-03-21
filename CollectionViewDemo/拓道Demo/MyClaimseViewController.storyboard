@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2fI-us-4rl">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--我的债权-->
+        <scene sceneID="tU1-Z2-c1e">
+            <objects>
+                <tableViewController id="2fI-us-4rl" customClass="MyClaimseViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="2" sectionFooterHeight="2" id="iYR-ne-58d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="Z3x-8N-gYV" userLabel="0">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="122" id="3rJ-tj-vgm">
+                                        <rect key="frame" x="0.0" y="99" width="375" height="122"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3rJ-tj-vgm" id="aWp-wq-62n">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="121.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="55.06" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MN9-yC-Htg">
+                                                    <rect key="frame" x="160" y="15" width="54.5" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="债权转让盈亏(元)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJG-Fm-umE">
+                                                    <rect key="frame" x="141" y="44" width="93" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QCm-yS-3LX" userLabel="HeadView">
+                                                    <rect key="frame" x="0.0" y="73" width="375" height="47"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iIr-J8-3Kg" userLabel="one">
+                                                            <rect key="frame" x="0.0" y="1" width="125" height="46"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="158.06" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfu-aP-rXr">
+                                                                    <rect key="frame" x="42" y="2" width="42" height="16"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="债权已赚取金额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttv-Ii-Sop">
+                                                                    <rect key="frame" x="24" y="22" width="77" height="14"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstItem="ttv-Ii-Sop" firstAttribute="top" secondItem="qfu-aP-rXr" secondAttribute="bottom" constant="4" id="4ra-sS-Vcq"/>
+                                                                <constraint firstItem="qfu-aP-rXr" firstAttribute="centerX" secondItem="iIr-J8-3Kg" secondAttribute="centerX" id="9wP-hc-bgK"/>
+                                                                <constraint firstItem="qfu-aP-rXr" firstAttribute="top" secondItem="iIr-J8-3Kg" secondAttribute="top" constant="2" id="BvR-bj-P2M"/>
+                                                                <constraint firstItem="ttv-Ii-Sop" firstAttribute="centerX" secondItem="iIr-J8-3Kg" secondAttribute="centerX" id="Xi3-Sv-fM7"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sva-zL-BOb" userLabel="two">
+                                                            <rect key="frame" x="126" y="1" width="125" height="46"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="158.06" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZO-uH-3Dz">
+                                                                    <rect key="frame" x="42" y="1" width="42" height="16"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="债权已赚取金额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIU-Mj-RXd">
+                                                                    <rect key="frame" x="24" y="21" width="77" height="14"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="14" id="3hB-Pf-Ugf"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstItem="eIU-Mj-RXd" firstAttribute="centerX" secondItem="Sva-zL-BOb" secondAttribute="centerX" id="1bM-bQ-2Xv"/>
+                                                                <constraint firstItem="aZO-uH-3Dz" firstAttribute="centerX" secondItem="Sva-zL-BOb" secondAttribute="centerX" id="2D0-aj-PoF"/>
+                                                                <constraint firstItem="eIU-Mj-RXd" firstAttribute="top" secondItem="aZO-uH-3Dz" secondAttribute="bottom" constant="4" id="KtN-Pf-9fV"/>
+                                                                <constraint firstItem="aZO-uH-3Dz" firstAttribute="top" secondItem="Sva-zL-BOb" secondAttribute="top" constant="1" id="a9W-cl-Sxn"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LQa-2s-tXQ" userLabel="three">
+                                                            <rect key="frame" x="252" y="1" width="125" height="46"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="158.06" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="117-SM-r4Y">
+                                                                    <rect key="frame" x="42" y="1" width="42" height="16"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="债权已赚取金额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLK-Y0-JRu">
+                                                                    <rect key="frame" x="24" y="21" width="77" height="14"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstItem="pLK-Y0-JRu" firstAttribute="top" secondItem="117-SM-r4Y" secondAttribute="bottom" constant="4" id="Vn0-9P-6pw"/>
+                                                                <constraint firstItem="117-SM-r4Y" firstAttribute="centerX" secondItem="LQa-2s-tXQ" secondAttribute="centerX" id="gic-j9-rq3"/>
+                                                                <constraint firstItem="117-SM-r4Y" firstAttribute="top" secondItem="LQa-2s-tXQ" secondAttribute="top" constant="1" id="ktS-ru-p3U"/>
+                                                                <constraint firstItem="pLK-Y0-JRu" firstAttribute="top" secondItem="117-SM-r4Y" secondAttribute="bottom" constant="4" id="nJy-gO-8kl"/>
+                                                                <constraint firstItem="pLK-Y0-JRu" firstAttribute="centerX" secondItem="LQa-2s-tXQ" secondAttribute="centerX" id="y8K-Bh-O1g"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="iIr-J8-3Kg" firstAttribute="width" secondItem="QCm-yS-3LX" secondAttribute="width" multiplier="1:3" id="1kx-RN-9nf"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Sva-zL-BOb" secondAttribute="bottom" id="3bw-DW-Kcj"/>
+                                                        <constraint firstItem="LQa-2s-tXQ" firstAttribute="leading" secondItem="Sva-zL-BOb" secondAttribute="trailing" constant="1" id="3ti-qQ-qhn"/>
+                                                        <constraint firstItem="iIr-J8-3Kg" firstAttribute="leading" secondItem="QCm-yS-3LX" secondAttribute="leading" id="C8i-jE-slS"/>
+                                                        <constraint firstItem="Sva-zL-BOb" firstAttribute="top" secondItem="QCm-yS-3LX" secondAttribute="top" constant="1" id="OVG-cD-DBb"/>
+                                                        <constraint firstItem="LQa-2s-tXQ" firstAttribute="top" secondItem="QCm-yS-3LX" secondAttribute="top" constant="1" id="Of7-IJ-QKp"/>
+                                                        <constraint firstAttribute="bottom" secondItem="LQa-2s-tXQ" secondAttribute="bottom" id="Owa-QI-g6k"/>
+                                                        <constraint firstItem="Sva-zL-BOb" firstAttribute="width" secondItem="iIr-J8-3Kg" secondAttribute="width" id="Psu-tm-vQw"/>
+                                                        <constraint firstItem="LQa-2s-tXQ" firstAttribute="width" secondItem="Sva-zL-BOb" secondAttribute="width" id="SNl-tJ-4QA"/>
+                                                        <constraint firstAttribute="height" constant="46.5" id="YwM-1y-ldP"/>
+                                                        <constraint firstItem="Sva-zL-BOb" firstAttribute="leading" secondItem="iIr-J8-3Kg" secondAttribute="trailing" constant="1" id="fAV-C1-cBU"/>
+                                                        <constraint firstAttribute="bottom" secondItem="iIr-J8-3Kg" secondAttribute="bottom" id="mPQ-ut-c5D"/>
+                                                        <constraint firstItem="iIr-J8-3Kg" firstAttribute="top" secondItem="QCm-yS-3LX" secondAttribute="top" constant="1" id="toj-ji-fRs"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="QCm-yS-3LX" firstAttribute="leading" secondItem="aWp-wq-62n" secondAttribute="leading" id="74x-ot-m0S"/>
+                                                <constraint firstItem="QCm-yS-3LX" firstAttribute="top" secondItem="wJG-Fm-umE" secondAttribute="bottom" constant="15" id="FbQ-Hq-nk5"/>
+                                                <constraint firstAttribute="trailing" secondItem="QCm-yS-3LX" secondAttribute="trailing" id="SVS-R5-fL5"/>
+                                                <constraint firstItem="wJG-Fm-umE" firstAttribute="top" secondItem="MN9-yC-Htg" secondAttribute="bottom" constant="5" id="Xap-bv-zFi"/>
+                                                <constraint firstItem="MN9-yC-Htg" firstAttribute="centerX" secondItem="aWp-wq-62n" secondAttribute="centerX" id="jbE-G7-YbT"/>
+                                                <constraint firstItem="wJG-Fm-umE" firstAttribute="centerX" secondItem="aWp-wq-62n" secondAttribute="centerX" id="oga-j1-SOa"/>
+                                                <constraint firstItem="MN9-yC-Htg" firstAttribute="top" secondItem="aWp-wq-62n" secondAttribute="top" constant="15" id="zE2-WN-7ZT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="Mpr-Bp-EG5" userLabel="1">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="vPf-oK-Plt">
+                                        <rect key="frame" x="0.0" y="225" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vPf-oK-Plt" id="7kg-4Z-llE">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你有三笔债权可以转让" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTS-Uz-EHf">
+                                                    <rect key="frame" x="15" y="14.5" width="120" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="zTS-Uz-EHf" firstAttribute="centerY" secondItem="7kg-4Z-llE" secondAttribute="centerY" id="XFg-nE-RkK"/>
+                                                <constraint firstItem="zTS-Uz-EHf" firstAttribute="leading" secondItem="7kg-4Z-llE" secondAttribute="leading" constant="15" id="XzO-ri-JzQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="a1T-DC-tqT">
+                                        <rect key="frame" x="0.0" y="269" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a1T-DC-tqT" id="zis-46-VYk">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你有三笔债权转让成功" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEU-n2-KPN">
+                                                    <rect key="frame" x="15" y="14.5" width="120" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="HEU-n2-KPN" firstAttribute="centerY" secondItem="zis-46-VYk" secondAttribute="centerY" id="Kb5-BU-vsA"/>
+                                                <constraint firstItem="HEU-n2-KPN" firstAttribute="leading" secondItem="zis-46-VYk" secondAttribute="leading" constant="15" id="RzN-us-U5J"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="常见问题" id="GIa-Z7-2FQ" userLabel="2">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="x4F-sE-wa3">
+                                        <rect key="frame" x="0.0" y="347" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x4F-sE-wa3" id="VpA-Is-Upf">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="什么是债权转让" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mC8-hi-jio">
+                                                    <rect key="frame" x="15" y="14.5" width="84" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mC8-hi-jio" firstAttribute="centerY" secondItem="VpA-Is-Upf" secondAttribute="centerY" id="Z9y-Sv-bRS"/>
+                                                <constraint firstItem="mC8-hi-jio" firstAttribute="leading" secondItem="VpA-Is-Upf" secondAttribute="leading" constant="15" id="tmb-4D-IdG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="d8K-5X-UzV">
+                                        <rect key="frame" x="0.0" y="391" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d8K-5X-UzV" id="6e7-tb-BIN">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="什么是债权价值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0i8-ie-apI">
+                                                    <rect key="frame" x="15" y="14.5" width="84" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="0i8-ie-apI" firstAttribute="centerY" secondItem="6e7-tb-BIN" secondAttribute="centerY" id="XKt-8d-qVq"/>
+                                                <constraint firstItem="0i8-ie-apI" firstAttribute="leading" secondItem="6e7-tb-BIN" secondAttribute="leading" constant="15" id="vGL-Xk-Bhb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="adf-bN-EuE">
+                                        <rect key="frame" x="0.0" y="435" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="adf-bN-EuE" id="QiV-KA-kAM">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="债权如何转让" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C78-pD-IGL">
+                                                    <rect key="frame" x="15" y="14.5" width="72" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="C78-pD-IGL" firstAttribute="centerY" secondItem="QiV-KA-kAM" secondAttribute="centerY" id="Ry7-CR-kEf"/>
+                                                <constraint firstItem="C78-pD-IGL" firstAttribute="leading" secondItem="QiV-KA-kAM" secondAttribute="leading" constant="15" id="fCM-Hd-I4a"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="AUi-5U-rDX">
+                                        <rect key="frame" x="0.0" y="479" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AUi-5U-rDX" id="VUQ-tx-qVw">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="那些符合转让条件" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XL1-fL-ewp">
+                                                    <rect key="frame" x="15" y="14.5" width="96" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="XL1-fL-ewp" firstAttribute="leading" secondItem="VUQ-tx-qVw" secondAttribute="leading" constant="15" id="OzN-cv-XUz"/>
+                                                <constraint firstItem="XL1-fL-ewp" firstAttribute="centerY" secondItem="VUQ-tx-qVw" secondAttribute="centerY" id="sFc-Wf-kwb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="cVJ-ma-f3l">
+                                        <rect key="frame" x="0.0" y="523" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cVJ-ma-f3l" id="bZO-uU-qO5">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="购买金额和本金的不同" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hh2-Q3-xHV">
+                                                    <rect key="frame" x="15" y="14.5" width="120" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hh2-Q3-xHV" firstAttribute="centerY" secondItem="bZO-uU-qO5" secondAttribute="centerY" id="fyJ-LW-TVT"/>
+                                                <constraint firstItem="hh2-Q3-xHV" firstAttribute="leading" secondItem="bZO-uU-qO5" secondAttribute="leading" constant="15" id="uhW-jr-ZQ4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="DKN-5C-zs3">
+                                        <rect key="frame" x="0.0" y="567" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DKN-5C-zs3" id="D1h-Cc-Xfc">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="债权转让收益如何计算" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLk-E2-6Yk">
+                                                    <rect key="frame" x="15" y="14.5" width="120" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="jLk-E2-6Yk" firstAttribute="centerY" secondItem="D1h-Cc-Xfc" secondAttribute="centerY" id="6rc-ja-XuC"/>
+                                                <constraint firstItem="jLk-E2-6Yk" firstAttribute="leading" secondItem="D1h-Cc-Xfc" secondAttribute="leading" constant="15" id="WKU-fe-iBu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="KaR-LQ-cuV">
+                                        <rect key="frame" x="0.0" y="611" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KaR-LQ-cuV" id="oWB-tk-lkZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="债权转让如何收费" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94H-Al-Cd8">
+                                                    <rect key="frame" x="15" y="14.5" width="96" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="94H-Al-Cd8" firstAttribute="centerY" secondItem="oWB-tk-lkZ" secondAttribute="centerY" id="Y3F-GI-2yd"/>
+                                                <constraint firstItem="94H-Al-Cd8" firstAttribute="leading" secondItem="oWB-tk-lkZ" secondAttribute="leading" constant="15" id="vKO-O8-XJT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Vhm-eT-6PL">
+                                        <rect key="frame" x="0.0" y="655" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vhm-eT-6PL" id="iBD-o9-2bR">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="债权的购买" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpF-My-8Gb">
+                                                    <rect key="frame" x="15" y="14.5" width="60" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="lpF-My-8Gb" firstAttribute="centerY" secondItem="iBD-o9-2bR" secondAttribute="centerY" id="89w-5C-aaD"/>
+                                                <constraint firstItem="lpF-My-8Gb" firstAttribute="leading" secondItem="iBD-o9-2bR" secondAttribute="leading" constant="15" id="mcG-LZ-VAP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="2fI-us-4rl" id="7dj-B3-pSX"/>
+                            <outlet property="delegate" destination="2fI-us-4rl" id="emv-Yr-oxD"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="我的债权" id="2ss-Di-3PQ"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="teZ-GZ-i1I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="504.5" y="316.5"/>
+        </scene>
+    </scenes>
+</document>
